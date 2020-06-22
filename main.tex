@@ -20,6 +20,23 @@
 % \usepackage{multirow}		% Column and row spanning in tables
 % \usepackage{chapterbib}	% Insert bibliograhpy with a simple include command
 
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\fontsize{14}{16}\bfseries\rmfamily}
+  {Chapter \thechapter}
+  {1em}
+  {\MakeUppercase}
+\titleformat{\section}[block]
+  {\fontsize{12}{14}\bfseries\rmfamily}
+  {\thesection}
+  {1em}
+  {\MakeUppercase}
+\titleformat{\subsection}[block]
+  {\fontsize{12}{14}\bfseries\rmfamily}
+  {\thesubsection}
+  {1em}
+  {}
+
 \usepackage[backend=biber,bibencoding=utf8,sorting=none,maxnames=99,giveninits=true,doi=false]{biblatex}
 \addbibresource{bibtex_entries.bib}
 \input{Biblatex_Mods}
